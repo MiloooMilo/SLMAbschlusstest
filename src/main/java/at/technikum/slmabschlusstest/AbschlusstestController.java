@@ -7,19 +7,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AbschlusstestController {
     private static int count = 0;
-    @GetMapping("/digitsum")
+    @GetMapping("/api/digitsum")
     public static int calculateDigitSum(@RequestParam int number) {
         int digitSum = 0;
         while (number != 0) {
             int digit = number % 10;
             digitSum += digit;
             number /= 10;
-            count++;
         }
+        count++;
         return digitSum;
     }
 
-    @GetMapping("/digitsum/usage")
+    @GetMapping("/api/digitsum/usage")
     public static int usage(){
         if(count!=0)
         count--;

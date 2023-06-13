@@ -13,4 +13,7 @@ class AbschlusstestControllerTest {
         assertEquals(AbschlusstestController.calculateDigitSum(n),4);
     }
 
+    @Test
+    void usage(){
+    }
 }
