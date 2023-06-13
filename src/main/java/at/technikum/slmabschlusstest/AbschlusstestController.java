@@ -21,8 +21,7 @@ public class AbschlusstestController {
 
     @GetMapping("/api/digitsum/usage")
     public static int usage(){
-        if(count!=0)
-        count--;
+
         return count;
     }
 
